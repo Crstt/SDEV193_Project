@@ -17,6 +17,8 @@ The program will incorporate the rules of the game, where rock beats scissors, s
 The computer opponent will randomly select a choice to compete against the user.
 The program will determine the winner based on the selections made by both the user and the computer.
 
+The Alternate version of the Game is Rock, Paper, Scissors, Lizard, Spock. The Alternate version will function just like the original, with two additional outcomes possible.
+
 SCORE TRACKING:
 The game will keep track of the user's score throughout multiple rounds.
 After each round, the program will display the results and update the score accordingly.
