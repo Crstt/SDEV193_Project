@@ -38,3 +38,50 @@ Additional comments and docstrings will be added throughout the codebase to impr
 References
 
 Lorre, C., Prady, B., &amp; Goetsch, D. (2008, November 17). The Big Bang Theory/The Lizard-Spock Expansion. episode. 
+
+# Quick Start Guide
+
+Welcome to the quick start guide for the Rock, Paper, Scissors, Lizard, Spock game project (SDEV193_Project)! In this project, we'll be creating a Python-based version of the game "Rock, Paper, Scissors, Lizard, Spock" made famous by the TV Series "The Big Bang Theory." Players will compete against a computer opponent, and the game will keep track of their scores.
+
+# Prerequisites
+Python installed on your computer (version 3.x or higher).
+
+# Getting Started
+**Clone the repository**: Start by cloning the project's repository from GitHub to your local machine using the following command:
+
+
+`git clone https://github.com/your-username/SDEV193_Project.git`
+
+**Navigate to the project directory**: Change your working directory to the project's root folder:
+
+`cd SDEV193_Project`
+
+**Run the game**: Now you are ready to play the Rock, Paper, Scissors, Lizard, Spock game! To start the game, run the Python script:
+
+
+`python game.py`
+
+# How to Play
+**Game Rules**: The game follows the rules outlined in "The Big Bang Theory" TV series. Here's a quick reminder of the rules:
+
+Scissors cuts paper
+Paper covers rock
+Rock crushes lizard
+Lizard poisons Spock
+Spock smashes scissors
+Scissors decapitates lizard
+Lizard eats paper
+Paper disproves Spock
+Spock vaporizes rock
+Rock crushes scissors
+
+**User Interaction**: When prompted, type the letter corresponding to your choice:
+
+'R' for Rock
+'P' for Paper
+'S' for Scissors
+'L' for Lizard
+'K' for Spock
+**Score Tracking**: The game will keep track of your score as you play multiple rounds. After each round, the results will be displayed, showing who won that round. At the end of the game, the final score will be shown.
+
+**Error Handling**: The program will handle invalid inputs gracefully, so don't worry if you mistype your choice.
