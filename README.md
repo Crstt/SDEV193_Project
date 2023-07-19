@@ -85,3 +85,9 @@ Rock crushes scissors
 **Score Tracking**: The game will keep track of your score as you play multiple rounds. After each round, the results will be displayed, showing who won that round. At the end of the game, the final score will be shown.
 
 **Error Handling**: The program will handle invalid inputs gracefully, so don't worry if you mistype your choice.
+
+***
+
+
+### Looking for a full user guide?
+Visit our wiki at: https://github.com/Crstt/SDEV193_Project/wiki/Instructions
