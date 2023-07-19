@@ -1,23 +1,21 @@
 # SDEV193_Project
 
-DESCRIPTION: Create a Rock, Paper, Scissors game using Python programming language.
+DESCRIPTION: Create a Rock, Paper, Scissors, Lizard, Spock game using Python programming language.
 
 INTRODUCTION:
-Rock, Paper, Scissors is a two-person game  where each item is trumped by another. Our goal is to create a Python-based version of the game that is easy to play and fun for users.
+Rock, Paper, Scissors, Lizard Spock is a two-person game and variation of the original Rock, Paper, Scissors game, where each item is trumped by another. The variation originates from the TV Series Big Bang Theory Season 2 Episode 8 "The Lizard-Spock Expansion". Our goal is to create a Python-based version of the game that is easy to play and fun for users.
 
 FEATURES:
 
 USER INTERACTION:
 The game will have a command line interface that allows players to interact with the program.
-Players will be able to type rock, paper, or scissors through the command line.
+Players will be able to type a one letter selection choice
 Appropriate validation will be implemented to handle invalid inputs.
 
 GAME LOGIC:
-The program will incorporate the rules of the game, where rock beats scissors, scissors beats paper, and paper beats rock.
+The program will incorporate the rules of the game where, As Sheldon explains, "Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors." (Lorre et al., 2008).
 The computer opponent will randomly select a choice to compete against the user.
 The program will determine the winner based on the selections made by both the user and the computer.
-
-The Alternate version of the Game is Rock, Paper, Scissors, Lizard, Spock. The Alternate version will function just like the original, with two additional outcomes possible.
 
 SCORE TRACKING:
 The game will keep track of the user's score throughout multiple rounds.
@@ -36,3 +34,7 @@ The project's repository will be hosted on GitHub.
 DOCUMENTATION:
 The project will include a README file that describes the game, its rules, and how to run it.
 Additional comments and docstrings will be added throughout the codebase to improve readability and understanding.
+
+References
+
+Lorre, C., Prady, B., &amp; Goetsch, D. (2008, November 17). The Big Bang Theory/The Lizard-Spock Expansion. episode. 
