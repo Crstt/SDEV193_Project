@@ -59,7 +59,7 @@ Python installed on your computer (version 3.x or higher).
 **Run the game**: Now you are ready to play the Rock, Paper, Scissors, Lizard, Spock game! To start the game, run the Python script:
 
 
-`python game.py`
+`python main.py`
 
 # How to Play
 **Game Rules**: The game follows the rules outlined in "The Big Bang Theory" TV series. Here's a quick reminder of the rules:
