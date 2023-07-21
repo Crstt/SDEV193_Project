@@ -1,4 +1,6 @@
 import random
+import emoji
+
 def rpsls():
     playagain = True
     playerScore = 0
@@ -7,8 +9,9 @@ def rpsls():
         validChoice = False
         possibleChoices = ["r","p","c","l","s"]
         choice = {"r":"Rock", "p":"Paper", "c":"Scissors","l":"Lizard","s":"Spock"}
+        emojis = {"r":emoji.emojize("::moai::"), "p":emoji.emojize("::page_facing_up::"), "c":emoji.emojize(":scissors:"),"l":emoji.emojize(":lizard::"),"s":emoji.emojize(":vulcan_salute:")}
         while not validChoice:
-            playerChoice = input("Enter your Choice - (R)ock, (P)aper, S(c)issors, (L)izard, (S)pock: ")
+            playerChoice = input(f"Enter your Choice - (R)ock{emojis['r']}, (P)aper{emojis['p']}, S(c)issors{emojis['c']}, (L)izard{emojis['l']}, (S)pock{emojis['s']}: ")
             playerChoice=playerChoice.lower()
             if playerChoice in possibleChoices:
                 validChoice = True
@@ -19,68 +22,68 @@ def rpsls():
             print("It's a tie. You must try again")
         elif playerChoice== "c":
             if computerChoice == "p":
-                print("Scissors cut Paper. You Win")
+                print(f"Scissors{emojis['c']} cut Paper{emojis['p']}. You Win")
                 playerScore += 1
             elif computerChoice == "l":
-                print("Scissors decapitates Lizard. You win")
+                print(f"Scissors{emojis['c']} decapitates Lizard{emojis['l']}. You win")
                 playerScore += 1
             elif computerChoice == "r":
-                print("Rock breaks Scissors. You lose")
+                print(f"Rock{emojis['r']} breaks Scissors{emojis['c']}. You lose")
                 computerscore += 1
             else:
-                print("Spock smashes Scissors. You lose")
+                print(f"Spock{emojis['s']} smashes Scissors{emojis['c']}. You lose")
                 computerscore += 1
         elif playerChoice == "s":
             if computerChoice == "c":
-                print("Spock smashes Scissors. You Win")
+                print(f"Spock{emojis['s']} smashes Scissors{emojis['c']}. You Win")
                 playerScore += 1
             elif computerChoice == "r":
-                print("Spock vaporizes Rock. You win")
+                print(f"Spock{emojis['s']} vaporizes Rock{emojis['r']}. You win")
                 playerScore += 1
             elif computerChoice == "l":
-                print("Lizard poisons Spock. You lose")
+                print(f"Lizard{emojis['l']} poisons Spock{emojis['s']}. You lose")
                 computerscore += 1
             else:
-                print("Paper disproves Spock. You lose")
+                print(f"Paper{emojis['p']} disproves Spock{emojis['s']}. You lose")
                 computerscore += 1
         elif playerChoice == "l":
             if computerChoice == "s":
-                print("Lizard poisons Spock. You win")
+                print(f"Lizard{emojis['l']} poisons Spock{emojis['s']}. You win")
                 playerScore += 1
             elif computerChoice == "p":
-                print("Lizard eats Paper. You win")
+                print(f"Lizard{emojis['l']} eats Paper{emojis['p']}. You win")
                 playerScore += 1
             elif computerChoice == "r":
-                print("Rock crushes Lizard. You lose")
+                print(f"Rock{emojis['r']} crushes Lizard{emojis['l']}. You lose")
                 computerscore += 1
             else:
-                print("Scissors decapitates Lizard. You lose")
+                print(f"Scissors{emojis['c']} decapitates Lizard{emojis['l']}. You lose")
                 computerscore += 1
         elif playerChoice == "r":
             if computerChoice == "c":
-                print("Rock breaks Scissors. You win")
+                print(f"Rock{emojis['r']} breaks Scissors{emojis['c']}. You win")
                 playerScore += 1
             elif computerChoice == "l":
-                print("Rock crushes Lizard. You win")
+                print(f"Rock{emojis['r']} crushes Lizard{emojis['l']}. You win")
                 playerScore += 1
             elif computerChoice == "s":
-                print("Spock vaporizes Rock. You lose")
+                print(f"Spock{emojis['s']} vaporizes Rock{emojis['r']}. You lose")
                 computerscore += 1
             else:
-                print("Paper wraps Rock. You lose")
+                print(f"Paper{emojis['p']} wraps Rock{emojis['r']}. You lose")
                 computerscore += 1
         else:
             if computerChoice == "r":
-                print("Paper wraps Rock. You win")
+                print(f"Paper{emojis['p']} wraps Rock{emojis['r']}. You win")
                 playerScore += 1
             elif computerChoice == "s":
-                print("Paper disproves Spock. You win")
+                print(f"Paper{emojis['p']} disproves Spock{emojis['s']}. You win")
                 playerScore += 1
             elif computerChoice == "l":
-                print("Lizard eats Paper. You lose")
+                print(f"Lizard{emojis['l']} eats Paper{emojis['p']}. You lose")
                 computerscore += 1
             else:
-                print("Scisors cut Paper. You lose")
+                print("Scisors cut Paper{emojis['p']}. You lose")
                 computerscore += 1
         print("The current score is:\nPlayer: " + str(playerScore) + "\nComputer: " + str(computerscore))
         newgame = input("Would you like to go again? y/n - ")
